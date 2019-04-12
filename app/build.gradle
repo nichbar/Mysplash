@@ -142,5 +142,5 @@ dependencies {
     implementation 'com.github.nekocode.rxlifecycle:rxlifecycle:2.0'
     implementation 'com.github.nekocode.rxlifecycle:rxlifecycle-compact:2.0'
 
-    implementation 'com.tencent.bugly:crashreport:2.8.6.0'
+//    implementation 'com.tencent.bugly:crashreport:2.8.6.0'
 }

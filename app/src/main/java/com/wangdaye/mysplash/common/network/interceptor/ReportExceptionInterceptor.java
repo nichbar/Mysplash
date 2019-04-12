@@ -1,7 +1,5 @@
 package com.wangdaye.mysplash.common.network.interceptor;
 
-import com.tencent.bugly.crashreport.CrashReport;
-
 import okhttp3.Interceptor;
 import okhttp3.Protocol;
 import okhttp3.Request;
@@ -11,7 +9,6 @@ abstract class ReportExceptionInterceptor implements Interceptor {
 
     void handleException(Exception e) {
         e.printStackTrace();
-        CrashReport.postCatchedException(e);
     }
 
     Response nullResponse(Request request) {

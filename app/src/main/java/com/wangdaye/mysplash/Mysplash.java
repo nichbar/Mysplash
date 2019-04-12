@@ -18,7 +18,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import android.text.TextUtils;
 
-import com.tencent.bugly.crashreport.CrashReport;
 import com.wangdaye.mysplash.common.basic.activity.LoadableActivity;
 import com.wangdaye.mysplash.common.di.component.DaggerApplicationComponent;
 import com.wangdaye.mysplash.common.network.json.Photo;
@@ -96,7 +95,6 @@ public class Mysplash extends Application
         activityList = new ArrayList<>();
 
         DownloadHelper.getInstance(this);
-        CrashReport.initCrashReport(getApplicationContext(), "c8ad99bd5d", false);
 
         if (SettingsOptionManager.getInstance(this).getAutoNightMode().equals("follow_system")) {
             ThemeManager.getInstance(this);
